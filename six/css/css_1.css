@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+body{
+   overflow:hidden;
+}
+
+
+
+.container{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background-color:#ccc;
+	overflow:auto
+	
+}
+
+
+.list{
+	
+	position:absolute;
+	top:470px;
+	left:110px;
+	width:900px;
+	height:400px;
+	background-color:#ccc;
+	margin-left:10px;
+   
+
+}
+
+.list1{
+	position:absolute;
+	top:50px;
+	left:0px;
+	width:200px;
+	height:870px;
+	background-color:#2e3353;
+}
+
+.text{
+	width:200px;
+	height:40px; 
+	background-color:#2e3353;
+	margin-bottom:30px;
+	line-height:40px;
+	font-size:20px;
+	text-align:"center";
+	color:#96CDCD;
+	
+	
+	
+}
+
+.text img{
+   width:25px; 
+   height:25px; 
+   border-radius:50%; 
+   margin-top:10px;
+   
+
+}
+
+
+.list2{
+	position:absolute;
+	top:50px;
+	left:110px;
+	width:900px;
+	height:400px;
+	background-color:#ccc;
+	margin-left:10px;
+   
+
+}
+.list3{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:50px;
+	background-color:#5690fc;
+	line-height:50px;
+	font-size:20px;
+	text-align:center;
+	
+}
+.list4{
+	position:absolute;
+	top:0px;
+	left:200px;
+	right:0px;
+	height:50px;
+	background-color:#fff;
+	float:left;
+}
+.title{
+	position:absolute;
+	top:0px;
+	left:50px;
+	
+	height:50px;
+	width:150PX;
+	background-color:white;
+	float:left;
+	line-height:48px;
+	
+	
+	
+}
+
+.list5{
+	position:absolute;
+	top:50px;
+	left:200px;
+	right:0px;
+	bottom:0px;
+	background-color:#ccc;
+	font-size:20px;
+}
+.list img{
+    width:240px;
+	height:150px;
+	float:left;
+	line-height:200px;
+	margin:20px;
+
+
+
+}
+.item
+{
+	width:280px;
+	height:380px;
+	border:2px solid #ccc; 
+	background-color:#fff;
+    margin-top:10px;
+	margin-left:10px;
+	float:left;
+	line-height:200px;
+	border-bottom-color:red;
+}
+
+.item img{
+	width:240px;
+	height:150px;
+	float:left;
+	line-height:200px;
+	margin:20px;
+	transition:all 4s;
+	border-radius:30px;
+	
+}
+.item img:hover{
+	transform: translate(50px,100px) scale(2,2) skew(20deg,30deg)  rotate(-20deg);
+}
+
+.text1{
+	position:absolute;
+	top:190px;
+	left:30px;
+	width:260px;
+	height:20px;
+	line-height:20px;
+	float:left;
+	background-color:#fff;
+}
+.text2{
+	position:absolute;
+	top:190px;
+	left:325px;
+	width:260px;
+	height:20px;
+	line-height:20px;
+	float:left;
+	background-color:#fff;
+}
+.text3{
+	position:absolute;
+	top:190px;
+	left:620px;
+	width:260px;
+	height:20px;
+	line-height:20px;
+	float:left;
+	background-color:#fff;
+}

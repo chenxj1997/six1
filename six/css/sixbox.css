@@ -1,0 +1,78 @@
+@charset "utf-8";
+.stage{
+	position:relative;
+	width:600px;
+	height:600px;
+	perspective:300px;
+	margin:10px auto;
+	background-color:white;
+	
+}
+.container{
+	top:50%;
+	left:50%;
+	margin:-100px 0 0 -100px;
+	width:200px;
+	height:200px;
+	transform:translateZ(-200px);/*设置3D空间的远点在平面中心再向z轴移动200px的位置*/
+	transform-style:preserve-3d;/*让其子元素在3D空间显示*/
+	position:absolute;
+	
+	animation:rotate-frame 5s linear infinite;
+	animation-fill-mode:forwards;
+}
+
+.slide
+{
+	width: 200px;
+    height: 200px;
+    position: absolute; 
+}
+
+.top {
+    
+    transform: rotateX(-90deg)  translateZ(100px) ;
+    
+    background-color:#C69;
+}
+.bottom {
+   
+	
+    transform: rotateX(-90deg)  translateZ(-100px) ;
+    
+    background-color:red;
+}
+.left {
+    
+    transform: rotateY(90deg) translateZ(100px) ;
+   
+    background-color:#9F0;
+}
+.right {
+   
+    transform: rotateY(-90deg) translateZ(100px) ;
+    
+    background-color:#33F;
+}
+.front {
+    
+    transform: translateZ(100px);
+    background-color:#366;  /*立方体前面正对着屏幕，所以不用旋转，只需向Z轴前移动距离*/
+     
+}
+.back {
+    
+    transform: translateZ(-100px);
+    background-color:#09F;   /*立方体后面正对着屏幕，所以不用旋转，只需向Z轴后移动距离*/
+}
+
+@keyframes rotate-frame {
+    0%{transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+	20%{transform:rotateY(90deg) rotateX(0deg) rotateZ(0deg);}
+	40%{transform:rotateY(180deg) rotateX(0deg) rotateZ(0deg);}
+	60%{transform:rotateY(270deg) rotateX(0deg) rotateZ(0deg);}
+	80%{transform:rotateY(180deg) rotateX(0deg) rotateZ(90deg);}
+	100%{transform:rotateY(90deg) rotateX(0deg) rotateZ(180deg);}
+	
+	
+}
